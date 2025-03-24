@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pam's Start Page !</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <script>
+    function updateGreeting() {
+        const today = new Date()
+        const curHr = today.getHours()
+
+        if (curHr < 12) {
+          document.getElementById("greeting").innerText = "Good Morning Pam!"
+        } else if (curHr < 18) {
+          document.getElementById("greeting").innerText = "Good Afternoon Pam!"
+        } else {
+          document.getElementById("greeting").innerText = "Good Evening Pam!"
+        }
+    }
+    // Update greeting every minute
+    setInterval(updateGreeting, 60000)
+    // Initial greeting update
+    updateGreeting()
+
+    // Function to toggle strike on anchor click
+    function toggleStrike(element) {
+      element.style.textDecoration = (element.style.textDecoration === "line-through") ? "none" : "line-through"
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onLoad="updateGreeting()">
+  <h1 id="greeting"></h1>
+  <nav>
+    <a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://www.spotify.com">Spotify</a>
+    <a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://mail.kqed.org/">Outlook Mail</a>
+    <a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://www.kqed.org/radio">KQED Radio</a>
+    <a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://pomofocus.io/">Pomodoro Timer</a>
+  </nav>
+  <main class="container">
+    <div class="left-column">
+      <div class="sonny-angel-container">
+        <iframe
+          src="https://giphy.com/embed/io5d28YEJMtEnbtfpZ"
+          frameBorder="0"
+          class="sonny-angel"
+        >
+        </iframe>
+      </div>
+      <ul class="ul-one">
+        <li><h2>Repos</h2></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://github.com/KQED/youth-media/pulls">Maia PRs</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://github.com/KQED/kqed-main-site/pulls">Main</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://github.com/KQED/kqed-wp/pulls">WordPress</a></li>
+        <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://github.com/KQED/frontend-training-pgilmour">Training repo</a></li> -->
+         <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://github.com/KQED/listening-project-frontend/pulls">`listening-project-frontend`</a></li>
+      </ul>
+      <ul class="ul-two">
+        <li><h2>Tools</h2></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://drive.google.com/">Google Drive</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.fontawesome.com/web/style/styling">Font Awesome Plugin Docs - Styling</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/document/d/10R2a9VWbpd2Kv_ORAVS9IDzQrjmu_lJMHwn3D6HPVRE/edit?tab=t.0">Personal DevTools</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://wakatime.com/dashboard">WakaTime</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://youtube.com">YouTube</a></li>
+        <!-- <br> -->
+        <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://npr.codes/">NPR blog</a></li> -->
+        <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://bandcamp.com/pamelajane">Bandcamp</a></li> -->
+        <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://www.dublab.com/schedule">DubLab</a></li> -->
+         <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://github.com/ChrisBuilds/terminaltexteffects">tte Terminal Text Effects</a></li> -->
+      </ul>
+      <ul>
+        <li><h3>Release Tools</h3></li>
+        <li>Instructions can be found at repo README.md</li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/document/d/1Z0pRI3xyirb4somoMAjnZfB_AkQU-E9P2slfwJFlPAA/edit">Resource List</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://console.cloud.google.com/cloud-build/builds?project=kqed-digital">Google Cloud Platform</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="http://spin.kqed.org/#/applications/kqed-org-frontend/clusters">Spinnaker for .Org</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/forms/d/1DERtp-bmZj5dfooN9wZItltLil-utXjZgE9K0tRJXE4/edit">Release Tracker: Add when the release is completed</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://kb.kqed.org/display/ProDoc/Ticket+Lifecycle">Ticket Lifecycle & Templates</a></li>
+      </ul>
+      <ul>
+        <li><h3>Resources</h3></li>
+        <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://kb.kqed.org/display/DIGINT/KQED+Software+Engineering+Docspace">Our Coding Practices</a></li> -->
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://kb.kqed.org/display/ProDoc">KQED Doc Space</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://passport.insperity.com/SecureAuth15/SecureAuth.aspx?wa=wsignin1.0&wtrealm=urn%3asp.PCMS&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fcs%252fnsp%252findex&wct=2025-01-13T21%3a30%3a55Z&wreply=https%3a%2f%2fportal.insperity.com%2fcs%2fnsp%2findex">Insperity</a></li>
+        <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://kqed.login.duosecurity.com/central/">Dayforce via Duo Login</a></li> -->
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://kb.kqed.org/">kb.kqed.org</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://calendar.google.com/calendar/u/0/r">G Cal - PTO</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://jiratl.kqed.org/plugins/servlet/desk/portal/4">IT Help Desk</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://flex.flextoday.com/Login.aspx">FlexToday Login</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://kb.kqed.org/display/HELPKB/Conference+Room+Maps?preview=/176685209/200015958/Conference%20Room%20Names%20and%20Capacity%203rd%20Floor%20June%202023.png">Conference Room Map</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/document/d/1SqaAElttncTaTZWIXo81a6zYDFkEhMw_ZpKtMTCydtc/edit">KQED Core Competencies FY24</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="top-block">
+        <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
+          <iframe src="https://giphy.com/embed/qy8s6QF1d7owE" width="100%" height="100%" style="position:absolute;left:0;" frameBorder="0" class="giphy-embed" allowFullScreen>
+          </iframe>
+        </div>
+      </div>
+      <ul class="everyday">
+        <li><h2>Everyday</h2></li>
+        <!-- <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/document/d/1PLY_-aZ4sKYy-lN89PI00vIMsJOAmtwnMkd2VYAT4g8/edit?tab=t.0#heading=h.q3a82u1e6u5i">February Daily Work Log</a></li> -->
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/document/d/1OYbRj4bXOgJqzPvYmeFf3JwRpR1Dsql0pxaIe_643m8/edit?tab=t.0">March Daily Work Log</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://mail.kqed.org/owa/#path=/calendar/view/Day">Outlook Calendar</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://jiratl.kqed.org/secure/RapidBoard.jspa?rapidView=96&view=detail&selectedIssue=KSM-4080&quickFilter=296">Jira Scrum Board</a></li>
+      </ul>
+      <ul>
+        <li><h2>Warm Up</h2></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://storage.pardot.com/1009792/1685141235Z8bRQIn3/Software_Architecture_Patterns.pdf">Read: SW Arch Styles</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/document/d/18dzUwbpI-WC-_BNvrsrQmUkHoReeNiHc1-TtVhBaqqY/edit#heading=h.fce28kkponrd">Notes on Arch Patterns</a></li>
+      </ul>
+      <ul>
+        <li><h2>Projects</h2></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://ww2.kqed.org/elections/wp-admin/">Voter Guide WordPress</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://www.kqed.org/voterguide">Live kqed.org/voterguide</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://docs.google.com/document/d/1O23rtUHBnKr-wximn0XV1SmfhmPkEFp5cQ-vofcbN1g/edit">My notes on block work load</a></li>
+        <br>
+        <!-- Discogs API -->
+        <!-- my personal website -->
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://veryinteractive.net/index.html">Very Interactive</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://github.com/community">GitHub Community</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://www.facebook.com/groups/inventrkits">meta group - inventr.io</a></li>
+        <li><a target="_blank" rel="noopener" onclick="toggleStrike(this)" href="https://auth0.openai.com/u/signup/identifier?state=hKFo2SA3VWxYSmI5aHdhZld4NlVPeTBReXFXS1VocjIwTGlPTKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDVmLTRmaGUwQTMtR2NYTndlOURscTlRVjlXU3luVkQxo2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q">OpenAI API Sign-in</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer
+    style="margin-top:30px;overflow:hidden;padding-bottom:200px;"
+  >
+    <div
+      style="width:100%;height:100%;position:relative;margin-top:-170px;"
+      class="footer-div"
+    >
+    <iframe
+      src="https://giphy.com/embed/PA5pAhOp5Y2Qg"
+      width="100%" 
+      height="250%" 
+      frameBorder="0" 
+      allowFullScreen
+      class="fang-gif"
+    >
+    </iframe>
+    </div>
+  </footer>
+  <!-- <script>
+    document.addEventListener('mousemove', function(e) {
+      const tracer = document.createElement('div');
+      tracer.className = 'tracer';
+      tracer.style.left = `${e.pageX}px`;
+      tracer.style.top = `${e.pageY}px`;
+      tracer.innerText = '+';
+      document.body.appendChild(tracer);
+      setTimeout(() => {
+        tracer.remove();
+      }, 1500);
+    });
+  </script> -->
+  <script>
+    // Mouse tracer inspired by https://www.shanacave.com/
+    function throttle(func, limit) {
+      let lastFunc;
+      let lastRan;
+      return function() {
+        const context = this;
+        const args = arguments;
+        if (!lastRan) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        } else {
+          clearTimeout(lastFunc);
+          lastFunc = setTimeout(function() {
+            if ((Date.now() - lastRan) >= limit) {
+              func.apply(context, args);
+              lastRan = Date.now();
+            }
+          }, limit - (Date.now() - lastRan));
+        }
+      }
+    }
+
+    function createTracer(e) {
+      const tracer = document.createElement('div');
+      tracer.className = 'tracer';
+      tracer.style.left = `${e.pageX}px`;
+      tracer.style.top = `${e.pageY}px`;
+      tracer.innerText = '+';
+      document.body.appendChild(tracer);
+      setTimeout(() => {
+        tracer.remove();
+      }, 1500);
+    }
+
+    document.addEventListener('mousemove', throttle(createTracer, 100));
+  </script>
+</body>
+</html>
